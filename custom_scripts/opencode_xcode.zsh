@@ -28,7 +28,7 @@ windows:
                 - exec: opencode
             - cwd: $REPO_PATH
               commands:
-                - exec: zsh $SETUP_SCRIPT
+                - exec: REPO_PATH=$REPO_PATH REPO_NAME=$REPO_NAME zsh $SETUP_SCRIPT
                 - exec: rm -f "$CONFIG_FILE"
 EOF
 
